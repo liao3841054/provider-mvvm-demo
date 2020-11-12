@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: prioviders,
       child: MaterialApp(
-        title: 'Flutter MVVM',
+        title: 'Provider 学习',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
