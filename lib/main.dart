@@ -3,6 +3,8 @@ import 'package:flutter_provider_mvvm/router.dart';
 import 'package:flutter_provider_mvvm/services/setup_services.dart';
 import 'package:provider/provider.dart';
 
+import 'route_paths.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        initialRoute: 'login',
+        initialRoute: RoutePaths.INHERITED,
         onGenerateRoute: Router.generateRoute,
       ),
     );
