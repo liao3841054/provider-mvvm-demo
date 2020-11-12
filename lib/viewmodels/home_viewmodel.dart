@@ -3,6 +3,7 @@ import 'package:flutter_provider_mvvm/viewmodels/view_state.dart';
 
 class HomeViewModel extends BaseViewModel {
   int count = 10;
+  int homeData = 100;
 
   loadData() async {
     setState(ViewState.loading);

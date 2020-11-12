@@ -5,6 +5,8 @@ import 'package:flutter_provider_mvvm/viewmodels/home_viewmodel.dart';
 import 'package:flutter_provider_mvvm/viewmodels/view_state.dart';
 import 'package:provider/provider.dart';
 
+import '../route_paths.dart';
+
 class HomeView extends StatefulWidget {
   final Map arguments;
 
@@ -111,6 +113,9 @@ class _HomeViewState extends State<HomeView> {
                                     FlatButton(
                                       onPressed: () {
                                         model.fav();
+                                        Navigator.of(context).pushNamed(
+                                          RoutePaths.GoodsListScreen,
+                                        );
                                       },
                                       child: Text('点击222'),
                                     ),

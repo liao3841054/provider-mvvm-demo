@@ -56,8 +56,8 @@ class _TestWidget extends StatefulWidget {
 class __TestWidgetState extends State<_TestWidget> {
   @override
   Widget build(BuildContext context) {
-    return Text('${Provider.of<int>(context)}');
-//    return Text('${Provider.of<int>(context, listen: false)}');
+//    return Text('${Provider.of<int>(context)}');
+    return Text('${Provider.of<int>(context, listen: false)}');
   }
 
   @override

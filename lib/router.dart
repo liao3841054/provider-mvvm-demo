@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_provider_mvvm/route_paths.dart';
+import 'package:flutter_provider_mvvm/views/change_provider.dart';
 import 'package:flutter_provider_mvvm/views/consumer.dart';
+import 'package:flutter_provider_mvvm/views/goods_fav.dart';
 import 'package:flutter_provider_mvvm/views/home.dart';
 import 'package:flutter_provider_mvvm/views/inherited.dart';
 import 'package:flutter_provider_mvvm/views/login.dart';
@@ -24,6 +26,11 @@ class Router {
         return MaterialPageRoute(builder: (_) => ConsumerView());
       case RoutePaths.SELECTOR:
         return MaterialPageRoute(builder: (_) => SelectorView());
+      case RoutePaths.CHANGE_NOTIFIER_PROVIDER:
+        return MaterialPageRoute(builder: (_) => ChangeProviderOfView());
+      case RoutePaths.GoodsListScreen:
+        return MaterialPageRoute(builder: (_) => GoodsListScreen());
+
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

@@ -52,21 +52,6 @@ class _LoginViewState extends State<LoginView> {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Consumer<int>(
-              builder: (BuildContext context, int value, Widget child) {
-                return Selector<int, int>(selector: (BuildContext c, int a) {
-                  return a;
-                }, builder: (BuildContext context, int value, Widget child) {
-                  debugPrint('顶层的 Count - build');
-                  return Container(
-                    color: Colors.redAccent,
-                    child: Text('===> $value'),
-                  );
-                }, shouldRebuild: (a, b) {
-                  return false;
-                });
-              },
-            ),
             _buildTitle(context),
             SizedBox(height: 30),
             _buildSignArea(context),
@@ -119,6 +104,14 @@ class _LoginViewState extends State<LoginView> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildButtonItem(BuildContext context) {
+    return FlatButton(
+      child: Text(''),
+      color: Colors.blueAccent,
+      onPressed: () {},
     );
   }
 
