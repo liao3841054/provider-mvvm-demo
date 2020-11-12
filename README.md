@@ -18,6 +18,8 @@ Flutter团队建议初学者使用**Provider**来管理state。但是Provider到
 
 Provider是一个UI工具，它是**状态管理的helper**，它是一个widget。通过这个widget可以把model对象传递给它的子widget。
 
+在理解**Provider** 我们需要理解下InheritedWidget 作用原理
+
 1. ### [InheritedWidget](https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html) 介绍
 
    
@@ -228,9 +230,9 @@ Provider是一个UI工具，它是**状态管理的helper**，它是一个widget
    )
    ```
 
-   ## 总计消费数据
+   ## 
 
-   非常简单的方式读取 `Provider`中的数据, 通过BuildContext 中的扩展方法：`Consumer` `watch`，`read`，`selector`
+   非常简单的方式读取 `Provider`中的数据, 可以通过`Consumer` ,`selector` 也可以通过BuildContext 中的扩展方法： `watch`，`read`，
 
    1. `Consumer` `Consumer2<A, B>` `Consumer3<A, B>`
 
